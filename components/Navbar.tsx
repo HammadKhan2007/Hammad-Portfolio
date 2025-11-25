@@ -29,10 +29,10 @@ const Navbar: React.FC = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0 flex items-center gap-2">
             <div className="w-8 h-8 bg-gradient-to-br from-cyan-400 to-purple-500 rounded flex items-center justify-center font-bold text-white">
-              FH
+              HK
             </div>
             <span className="font-bold text-xl tracking-tight text-white">
-              Faarid<span className="text-cyan-400">Hussnain</span>
+              Hammad<span className="text-cyan-400">Khan</span>
             </span>
           </div>
           

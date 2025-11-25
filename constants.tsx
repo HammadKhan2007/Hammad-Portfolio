@@ -11,7 +11,7 @@ export const SOCIAL_LINKS = {
   github: "https://github.com",
   linkedin: "https://linkedin.com",
   whatsapp: "https://whatsapp.com",
-  email: "contact@faaridhussnain.com"
+  email: "contact@hammadkhan.com"
 };
 
 export const SKILLS: Skill[] = [
@@ -80,14 +80,14 @@ export const TESTIMONIALS: Testimonial[] = [
     id: 1,
     name: "Muhammad Nadeem",
     role: "Managing Director at Sammers & Sammers, Lahore",
-    content: "Whenever we get stuck with APIs, automations, or server logic, we just call Faarid. He handles the technical stuff. Sharp honest about what will work and what won't.",
+    content: "Whenever we get stuck with APIs, automations, or server logic, we just call Hammad. He handles the technical stuff. Sharp honest about what will work and what won't.",
     rating: 5
   },
   {
     id: 2,
     name: "Sana Ullah",
     role: "Co-Founder at IT PYX",
-    content: "What makes Faarid different is the way he thinks. He doesn't blindly build whatever asked; he questions the logic, cuts the useless stuff, and pushes for a smarter direction.",
+    content: "What makes Hammad different is the way he thinks. He doesn't blindly build whatever asked; he questions the logic, cuts the useless stuff, and pushes for a smarter direction.",
     rating: 5
   },
   {
@@ -101,7 +101,7 @@ export const TESTIMONIALS: Testimonial[] = [
     id: 4,
     name: "Atif Memon",
     role: "Owner at Atif Photo Studio, Lahore",
-    content: "Faarid built a complete invoicing CMS for us. The system runs smoothly, the reports are accurate, and the workflow finally makes sense!",
+    content: "Hammad built a complete invoicing CMS for us. The system runs smoothly, the reports are accurate, and the workflow finally makes sense!",
     rating: 5
   }
 ];

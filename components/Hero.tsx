@@ -35,8 +35,8 @@ const Hero: React.FC = () => {
           <div className="space-y-6">
             <div>
               <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-4">
-                <span className="block text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400">Faarid</span>
-                <span className="block text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500 glow-text">Hussnain</span>
+                <span className="block text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400">Hammad</span>
+                <span className="block text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500 glow-text">Khan</span>
               </h1>
               
               <div className="flex items-center gap-2 text-green-400 font-medium tracking-wide">
@@ -50,7 +50,7 @@ const Hero: React.FC = () => {
                <div className="p-6 bg-dark-800 rounded-lg border border-dashed border-gray-700 relative overflow-hidden group min-h-[160px]">
                   <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-purple-500 to-cyan-500"></div>
                   <div className="font-mono text-sm space-y-2">
-                    <p className="text-gray-500">// @entrepreneur @faarid_hussnain</p>
+                    <p className="text-gray-500">// @entrepreneur @hammad_khan</p>
                     <p className="text-gray-300 leading-relaxed">
                       {text}
                       <span className="animate-pulse inline-block w-2 h-4 bg-cyan-500 ml-1 align-middle"></span>

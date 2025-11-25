@@ -41,7 +41,7 @@ const About: React.FC = () => {
               <div className="relative rounded-2xl overflow-hidden border-2 border-white/10 group">
                   <img 
                     src="https://picsum.photos/600/600?random=20" 
-                    alt="Faarid Portrait" 
+                    alt="Hammad Portrait" 
                     className="w-full h-auto grayscale group-hover:grayscale-0 transition-all duration-500 transform group-hover:scale-105" 
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-dark-900 via-transparent to-transparent opacity-80"></div>
