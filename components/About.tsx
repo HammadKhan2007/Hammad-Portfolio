@@ -38,13 +38,19 @@ const About: React.FC = () => {
            </div>
 
            <div className="order-1 md:order-2 relative">
-              <div className="relative rounded-2xl overflow-hidden border-2 border-white/10 group">
+              <div className="relative rounded-2xl overflow-hidden border-2 border-cyan-500/20 shadow-2xl shadow-cyan-500/10">
+                  {/* UPDATE: Changed src to use local image from public folder */}
+                  {/* Removed grayscale and hover scale effects */}
                   <img 
-                    src="https://picsum.photos/600/600?random=20" 
-                    alt="Hammad Portrait" 
-                    className="w-full h-auto grayscale group-hover:grayscale-0 transition-all duration-500 transform group-hover:scale-105" 
+                    src="/profile.jpg" 
+                    alt="Hammad Khan" 
+                    className="w-full h-auto object-cover"
+                    onError={(e) => {
+                      // Fallback if image is missing
+                      e.currentTarget.src = "https://ui-avatars.com/api/?name=Hammad+Khan&background=0D8ABC&color=fff&size=512";
+                    }} 
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-dark-900 via-transparent to-transparent opacity-80"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-dark-900/60 to-transparent pointer-events-none"></div>
                   
                   {/* Decorative corner accents */}
                   <div className="absolute top-4 right-4 w-12 h-12 border-t-2 border-r-2 border-cyan-500 rounded-tr-xl"></div>

@@ -70,7 +70,8 @@ export const PROJECTS: Project[] = [
       "n8n Automation", "Cloud Linux", "Docker", 
       "Vector Databases", "Git/GitHub", "Internal Tooling"
     ],
-    image: "https://picsum.photos/800/450?grayscale",
+    // UPDATE: Changed to use local image from public folder
+    image: "/project.jpg",
     featured: true
   }
 ];
