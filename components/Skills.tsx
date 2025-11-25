@@ -15,7 +15,7 @@ const SkillCard: React.FC<{ skill: Skill }> = ({ skill }) => {
   };
 
   // Circular Progress Calculation
-  const radius = 36; // Slightly larger
+  const radius = 36; 
   const circumference = 2 * Math.PI * radius;
   const strokeDashoffset = circumference - (skill.level / 100) * circumference;
 
@@ -25,7 +25,7 @@ const SkillCard: React.FC<{ skill: Skill }> = ({ skill }) => {
       onMouseMove={handleMouseMove}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      className="group relative rounded-2xl border border-white/10 bg-dark-800 p-6 transition-all duration-300 hover:border-cyan-500/30 overflow-hidden flex flex-col items-center justify-between text-center h-[260px] shadow-lg hover:shadow-cyan-500/10 hover:-translate-y-1"
+      className="group relative rounded-xl border border-white/10 bg-dark-800 p-4 transition-all duration-300 hover:border-cyan-500/30 overflow-hidden flex flex-col items-center justify-between text-center h-[220px] w-full sm:w-[190px] shadow-lg hover:shadow-cyan-500/10 hover:-translate-y-1"
     >
       {/* Spotlight Gradient */}
       <div
@@ -36,9 +36,9 @@ const SkillCard: React.FC<{ skill: Skill }> = ({ skill }) => {
       />
       
       {/* Top Section: Progress Circle with Icon */}
-      <div className="relative w-28 h-28 mb-2 transform transition-transform duration-500 group-hover:scale-105">
+      <div className="relative w-24 h-24 mb-1 transform transition-transform duration-500 group-hover:scale-105">
         {/* Background Circle */}
-        <svg className="w-full h-full transform -rotate-90 drop-shadow-lg">
+        <svg className="w-full h-full transform -rotate-90 drop-shadow-lg" viewBox="0 0 112 112">
           <circle
             cx="56"
             cy="56"
@@ -73,31 +73,32 @@ const SkillCard: React.FC<{ skill: Skill }> = ({ skill }) => {
         {/* Icon Centered */}
         <div className="absolute inset-0 flex items-center justify-center text-gray-400 group-hover:text-white transition-colors duration-300">
           <div className="transform transition-all duration-300 group-hover:scale-110 group-hover:text-cyan-400">
-             {skill.icon}
+             {/* Scale icon down slightly */}
+             {React.cloneElement(skill.icon as React.ReactElement<{ className?: string }>, { className: "w-7 h-7" })}
           </div>
         </div>
       </div>
       
       {/* Middle Section: Name and Stats */}
       <div className="relative z-10 w-full flex flex-col items-center">
-        <h4 className="text-xl font-bold text-white mb-1 tracking-tight group-hover:text-cyan-400 transition-colors">{skill.name}</h4>
+        <h4 className="text-lg font-bold text-white mb-0.5 tracking-tight group-hover:text-cyan-400 transition-colors">{skill.name}</h4>
         
-        <div className="flex items-center gap-2 mb-4">
-             <span className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-400">
+        <div className="flex items-center gap-2 mb-2">
+             <span className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-400">
                 {skill.level}%
              </span>
-             <span className="text-xs text-gray-500 font-mono mt-1">{skill.years}</span>
+             <span className="text-[10px] text-gray-500 font-mono mt-1">{skill.years}</span>
         </div>
       </div>
 
       {/* Bottom Section: Badge */}
       <div className="w-full mt-auto">
          {skill.isExpert ? (
-             <div className="w-full py-1.5 rounded-full bg-gradient-to-r from-cyan-500/20 to-purple-500/20 border border-cyan-500/30 text-cyan-300 text-[10px] font-bold uppercase tracking-wider shadow-[0_0_10px_rgba(34,211,238,0.1)] group-hover:shadow-[0_0_15px_rgba(34,211,238,0.2)] transition-all">
+             <div className="w-full py-1 rounded-full bg-gradient-to-r from-cyan-500/20 to-purple-500/20 border border-cyan-500/30 text-cyan-300 text-[9px] font-bold uppercase tracking-wider shadow-[0_0_10px_rgba(34,211,238,0.1)] group-hover:shadow-[0_0_15px_rgba(34,211,238,0.2)] transition-all">
                 Vibe Coding Expert
              </div>
          ) : (
-             <div className="w-full py-1.5 rounded-full bg-dark-700 border border-white/5 text-gray-400 text-[10px] font-bold uppercase tracking-wider">
+             <div className="w-full py-1 rounded-full bg-dark-700 border border-white/5 text-gray-400 text-[9px] font-bold uppercase tracking-wider">
                 Intermediate
              </div>
          )}
@@ -143,19 +144,20 @@ const Skills: React.FC = () => {
           </p>
         </div>
 
-        <div className="space-y-20">
+        <div className="space-y-16">
           {categories.map((category, catIndex) => (
             <div 
               key={category}
               className={`transition-all duration-1000 transform ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
               style={{ transitionDelay: `${catIndex * 150}ms` }}
             >
-              <div className="flex items-center gap-4 mb-8">
-                  <h3 className="text-2xl font-bold text-cyan-400 tracking-wide uppercase">{category}</h3>
+              <div className="flex items-center gap-4 mb-6">
+                  <h3 className="text-xl md:text-2xl font-bold text-cyan-400 tracking-wide uppercase">{category}</h3>
                   <div className="h-px flex-grow bg-gradient-to-r from-cyan-500/50 to-transparent"></div>
               </div>
               
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
+              {/* Changed from Grid to Flex Wrap for "One Line" effect */}
+              <div className="flex flex-wrap justify-center gap-4">
                 {SKILLS.filter(s => s.category === category).map((skill) => (
                   <SkillCard key={skill.name} skill={skill} />
                 ))}
