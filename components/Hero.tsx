@@ -80,7 +80,7 @@ const Hero: React.FC = () => {
   }, []);
 
   return (
-    <section id="home" className="relative min-h-screen flex flex-col items-center justify-center pt-20 overflow-hidden text-center">
+    <section id="home" className="relative min-h-screen flex flex-col items-center justify-center pt-16 overflow-hidden text-center">
       {/* Matrix Rain Background */}
       <canvas 
         ref={canvasRef} 
@@ -91,25 +91,25 @@ const Hero: React.FC = () => {
       <div className="absolute inset-0 bg-gradient-to-t from-dark-900 via-transparent to-transparent"></div>
       <div className="absolute inset-0 bg-gradient-to-b from-dark-900 via-transparent to-transparent"></div>
 
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full flex flex-col items-center">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full flex flex-col items-center">
         
-        <div className="mb-8">
-            <h1 className="text-6xl md:text-8xl font-bold leading-tight mb-4 tracking-tighter">
-              <span className="block text-white drop-shadow-2xl">Hammad</span>
-              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-500 to-cyan-400 glow-text animate-gradient-x">Khan</span>
+        <div className="mb-8 scale-90 md:scale-100 transition-transform">
+            <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6 tracking-tighter">
+              <span className="inline-block text-white drop-shadow-2xl mr-3">Hammad</span>
+              <span className="inline-block text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-500 to-cyan-400 glow-text animate-gradient-x">Khan</span>
             </h1>
             
-            <div className="inline-flex items-center gap-2 text-green-400 font-medium tracking-wide bg-dark-800/80 px-4 py-2 rounded-full border border-green-500/20 backdrop-blur-sm">
+            <div className="inline-flex items-center gap-2 text-green-400 font-medium tracking-wide bg-dark-800/80 px-4 py-2 rounded-full border border-green-500/20 backdrop-blur-sm text-sm md:text-base">
                 <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
                 Building Networks Worldwide & Collaborating on Projects
             </div>
         </div>
 
-        <div className="relative w-full max-w-2xl mt-8 mb-12">
+        <div className="relative w-full max-w-2xl mt-4 mb-10">
             {/* Code comment block style */}
-            <div className="p-8 bg-dark-800/90 backdrop-blur-md rounded-2xl border border-white/10 relative overflow-hidden group shadow-2xl shadow-purple-900/20">
+            <div className="p-6 md:p-8 bg-dark-800/90 backdrop-blur-md rounded-2xl border border-white/10 relative overflow-hidden group shadow-2xl shadow-purple-900/20">
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-cyan-500 via-purple-500 to-cyan-500"></div>
-              <div className="font-mono text-base md:text-lg space-y-4 text-left">
+              <div className="font-mono text-sm md:text-base space-y-4 text-left">
                 <p className="text-gray-500 flex items-center gap-2">
                   <span className="text-purple-400">const</span> 
                   <span className="text-yellow-200">developer</span> 
@@ -129,17 +129,17 @@ const Hero: React.FC = () => {
         </div>
 
         <div className="flex flex-wrap justify-center gap-6">
-          <a href="#projects" className="group px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-lg font-bold transition-all shadow-[0_0_20px_rgba(34,211,238,0.4)] hover:shadow-[0_0_40px_rgba(34,211,238,0.7)] hover:scale-105 flex items-center gap-2 border border-cyan-400/20">
+          <a href="#projects" className="group px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-lg font-bold transition-all shadow-[0_0_20px_rgba(34,211,238,0.4)] hover:shadow-[0_0_40px_rgba(34,211,238,0.7)] hover:scale-105 flex items-center gap-2 border border-cyan-400/20 text-sm md:text-base">
             View Project 
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </a>
-          <a href="#contact" className="group px-8 py-4 bg-transparent border border-purple-500/50 text-purple-400 rounded-lg font-bold hover:bg-purple-500 hover:text-white hover:border-purple-500 transition-all shadow-[0_0_10px_rgba(168,85,247,0.1)] hover:shadow-[0_0_20px_rgba(168,85,247,0.5)] flex items-center gap-2 backdrop-blur-sm">
+          <a href="#contact" className="group px-8 py-4 bg-transparent border border-purple-500/50 text-purple-400 rounded-lg font-bold hover:bg-purple-500 hover:text-white hover:border-purple-500 transition-all shadow-[0_0_10px_rgba(168,85,247,0.1)] hover:shadow-[0_0_20px_rgba(168,85,247,0.5)] flex items-center gap-2 backdrop-blur-sm text-sm md:text-base">
             Connect
             <Network className="w-5 h-5 group-hover:rotate-45 transition-transform" />
           </a>
         </div>
         
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce text-gray-500">
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce text-gray-500">
             <ChevronDown className="w-6 h-6" />
         </div>
       </div>

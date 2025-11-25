@@ -1,9 +1,29 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Send, MapPin, Mail, Github, Linkedin, Phone } from 'lucide-react';
 import { SOCIAL_LINKS } from '../constants';
 
 const Contact: React.FC = () => {
   const [form, setForm] = useState({ name: '', email: '', subject: '', message: '' });
+  const [isVisible, setIsVisible] = useState(false);
+  const sectionRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -15,8 +35,8 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <section id="contact" className="bg-dark-900 pt-24 pb-8 border-t border-white/5">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
+    <section ref={sectionRef} id="contact" className="bg-dark-900 pt-24 pb-8 border-t border-white/5">
+      <div className={`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20 transition-all duration-1000 transform ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
         <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-white">CONTACT<span className="text-cyan-400">.NET</span></h2>
         </div>

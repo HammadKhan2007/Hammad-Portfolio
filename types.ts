@@ -6,6 +6,7 @@ export interface Project {
   tagline: string;
   description: string;
   stats: string[];
+  features?: string[]; // Added for "Research Areas"
   tags: string[];
   image: string;
   featured: boolean;

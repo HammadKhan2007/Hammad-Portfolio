@@ -16,41 +16,41 @@ export const SOCIAL_LINKS = {
 
 export const SKILLS: Skill[] = [
   // Frontend
-  { name: 'React', level: 90, icon: <Code2 className="w-6 h-6" />, category: 'Frontend', isExpert: true, years: '1+ year' },
-  { name: 'TypeScript', level: 85, icon: <Terminal className="w-6 h-6" />, category: 'Frontend', isExpert: true, years: '1+ year' },
-  { name: 'Tailwind CSS', level: 95, icon: <Layout className="w-6 h-6" />, category: 'Frontend', isExpert: true, years: '2+ years' },
-  { name: 'JavaScript', level: 95, icon: <Globe className="w-6 h-6" />, category: 'Frontend', isExpert: true, years: '5+ years' },
-  { name: 'HTML', level: 97, icon: <Layout className="w-6 h-6" />, category: 'Frontend', isExpert: true, years: '5+ years' },
-  { name: 'CSS', level: 90, icon: <Layout className="w-6 h-6" />, category: 'Frontend', isExpert: true, years: '5+ years' },
+  { name: 'React', level: 90, icon: <Code2 className="w-8 h-8" />, category: 'Frontend', isExpert: true, years: '1+ year' },
+  { name: 'TypeScript', level: 85, icon: <Terminal className="w-8 h-8" />, category: 'Frontend', isExpert: true, years: '1+ year' },
+  { name: 'Tailwind CSS', level: 95, icon: <Layout className="w-8 h-8" />, category: 'Frontend', isExpert: true, years: '2+ years' },
+  { name: 'JavaScript', level: 95, icon: <Globe className="w-8 h-8" />, category: 'Frontend', isExpert: true, years: '5+ years' },
+  { name: 'HTML', level: 97, icon: <Layout className="w-8 h-8" />, category: 'Frontend', isExpert: true, years: '5+ years' },
+  { name: 'CSS', level: 90, icon: <Layout className="w-8 h-8" />, category: 'Frontend', isExpert: true, years: '5+ years' },
 
   // Backend
-  { name: 'Node.js', level: 90, icon: <Server className="w-6 h-6" />, category: 'Backend', isExpert: true, years: '2+ years' },
-  { name: 'PHP', level: 75, icon: <Database className="w-6 h-6" />, category: 'Backend', isExpert: true, years: '2+ years' },
-  { name: 'Python', level: 85, icon: <Brain className="w-6 h-6" />, category: 'Backend', isExpert: true, years: '2+ years' },
-  { name: 'REST APIs', level: 95, icon: <Globe className="w-6 h-6" />, category: 'Backend', isExpert: true, years: '3+ years' },
+  { name: 'Node.js', level: 90, icon: <Server className="w-8 h-8" />, category: 'Backend', isExpert: true, years: '2+ years' },
+  { name: 'PHP', level: 75, icon: <Database className="w-8 h-8" />, category: 'Backend', isExpert: true, years: '2+ years' },
+  { name: 'Python', level: 85, icon: <Brain className="w-8 h-8" />, category: 'Backend', isExpert: true, years: '2+ years' },
+  { name: 'REST APIs', level: 95, icon: <Globe className="w-8 h-8" />, category: 'Backend', isExpert: true, years: '3+ years' },
 
   // DevOps
-  { name: 'AWS', level: 80, icon: <Cloud className="w-6 h-6" />, category: 'DevOps', isExpert: false, years: '2+ years' },
-  { name: 'WHM/cPanel', level: 90, icon: <Settings className="w-6 h-6" />, category: 'DevOps', isExpert: true, years: '4+ years' },
-  { name: 'Git', level: 95, icon: <GitBranch className="w-6 h-6" />, category: 'DevOps', isExpert: true, years: '3+ years' },
-  { name: 'Linux Servers', level: 85, icon: <Terminal className="w-6 h-6" />, category: 'DevOps', isExpert: true, years: '3+ years' },
-  { name: 'Nginx/Apache', level: 70, icon: <Server className="w-6 h-6" />, category: 'DevOps', isExpert: false, years: '3+ years' },
+  { name: 'AWS', level: 80, icon: <Cloud className="w-8 h-8" />, category: 'DevOps', isExpert: false, years: '2+ years' },
+  { name: 'WHM/cPanel', level: 90, icon: <Settings className="w-8 h-8" />, category: 'DevOps', isExpert: true, years: '4+ years' },
+  { name: 'Git', level: 95, icon: <GitBranch className="w-8 h-8" />, category: 'DevOps', isExpert: true, years: '3+ years' },
+  { name: 'Linux Servers', level: 85, icon: <Terminal className="w-8 h-8" />, category: 'DevOps', isExpert: true, years: '3+ years' },
+  { name: 'Nginx/Apache', level: 70, icon: <Server className="w-8 h-8" />, category: 'DevOps', isExpert: false, years: '3+ years' },
 
   // AI/ML
-  { name: 'ChatGPT API', level: 95, icon: <Brain className="w-6 h-6" />, category: 'AI/ML', isExpert: true, years: '3+ years' },
-  { name: 'API Integrations', level: 90, icon: <Share2 className="w-6 h-6" />, category: 'AI/ML', isExpert: true, years: '3+ years' },
-  { name: 'n8n Automations', level: 95, icon: <WorkflowIcon className="w-6 h-6" />, category: 'AI/ML', isExpert: true, years: '1+ year' },
-  { name: '3rd Party APIs', level: 95, icon: <Globe className="w-6 h-6" />, category: 'AI/ML', isExpert: true, years: '3+ years' },
-  { name: 'Vector DBs', level: 80, icon: <Database className="w-6 h-6" />, category: 'AI/ML', isExpert: false, years: '1+ year' },
-  { name: 'WhatsApp Cloud', level: 90, icon: <MessageSquare className="w-6 h-6" />, category: 'AI/ML', isExpert: true, years: '1+ year' },
+  { name: 'ChatGPT API', level: 95, icon: <Brain className="w-8 h-8" />, category: 'AI/ML', isExpert: true, years: '3+ years' },
+  { name: 'API Integrations', level: 90, icon: <Share2 className="w-8 h-8" />, category: 'AI/ML', isExpert: true, years: '3+ years' },
+  { name: 'n8n Automations', level: 95, icon: <WorkflowIcon className="w-8 h-8" />, category: 'AI/ML', isExpert: true, years: '1+ year' },
+  { name: '3rd Party APIs', level: 95, icon: <Globe className="w-8 h-8" />, category: 'AI/ML', isExpert: true, years: '3+ years' },
+  { name: 'Vector DBs', level: 80, icon: <Database className="w-8 h-8" />, category: 'AI/ML', isExpert: false, years: '1+ year' },
+  { name: 'WhatsApp Cloud', level: 90, icon: <MessageSquare className="w-8 h-8" />, category: 'AI/ML', isExpert: true, years: '1+ year' },
 
   // Tools
-  { name: 'VS Code', level: 95, icon: <Code2 className="w-6 h-6" />, category: 'Tools', isExpert: true, years: '5+ years' },
-  { name: 'WordPress', level: 90, icon: <Globe className="w-6 h-6" />, category: 'Tools', isExpert: true, years: '4+ years' },
-  { name: 'Firebase', level: 70, icon: <Database className="w-6 h-6" />, category: 'Tools', isExpert: false, years: '2+ years' },
-  { name: 'CRM Systems', level: 70, icon: <Box className="w-6 h-6" />, category: 'Tools', isExpert: false, years: '2+ years' },
-  { name: 'SaaS Systems', level: 80, icon: <Cloud className="w-6 h-6" />, category: 'Tools', isExpert: false, years: '1+ year' },
-  { name: 'GitHub', level: 90, icon: <GitBranch className="w-6 h-6" />, category: 'Tools', isExpert: false, years: '3+ years' },
+  { name: 'VS Code', level: 95, icon: <Code2 className="w-8 h-8" />, category: 'Tools', isExpert: true, years: '5+ years' },
+  { name: 'WordPress', level: 90, icon: <Globe className="w-8 h-8" />, category: 'Tools', isExpert: true, years: '4+ years' },
+  { name: 'Firebase', level: 70, icon: <Database className="w-8 h-8" />, category: 'Tools', isExpert: false, years: '2+ years' },
+  { name: 'CRM Systems', level: 70, icon: <Box className="w-8 h-8" />, category: 'Tools', isExpert: false, years: '2+ years' },
+  { name: 'SaaS Systems', level: 80, icon: <Cloud className="w-8 h-8" />, category: 'Tools', isExpert: false, years: '1+ year' },
+  { name: 'GitHub', level: 90, icon: <GitBranch className="w-8 h-8" />, category: 'Tools', isExpert: false, years: '3+ years' },
 ];
 
 export const PROJECTS: Project[] = [
@@ -60,17 +60,23 @@ export const PROJECTS: Project[] = [
     tagline: "Engineering Intelligence. Building the Future",
     description: "A comprehensive IT services platform specializing in website and app development, alongside offering comprehensive domain and hosting solutions powered by cutting-edge AI technology. Serving clients globally with reliable, scalable, and innovative solutions.",
     stats: [
-      "500+ Internal experiments", 
-      "99.9% System reliability", 
-      "50+ Self-developed tools"
+      "500+ Internal experiments & prototypes", 
+      "99.9% System reliability across our research stacks", 
+      "50+ Self-developed tools, frameworks, and automations"
+    ],
+    features: [
+      "Autonomous AI agents & applied automation",
+      "Infrastructure intelligence for large-scale systems",
+      "Experimental backend architectures",
+      "Human-AI interaction and workflow augmentation",
+      "High-availability compute systems on Linux"
     ],
     tags: [
       "Linux Systems", "Bash/Shell Scripting", "Nginx/Apache", 
       "Node.js", "Python", "AI/LLM Integration", 
       "n8n Automation", "Cloud Linux", "Docker", 
-      "Vector Databases", "Git/GitHub", "Internal Tooling"
+      "Vector Databases", "System Monitoring & Observability", "Git/GitHub", "Custom Internal Tooling"
     ],
-    // UPDATE: Changed to use local image from public folder
     image: "/project.jpg",
     featured: true
   }
