@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Send, MapPin, Mail, Github, Linkedin, Phone } from 'lucide-react';
+import { SOCIAL_LINKS } from '../constants';
 
 const Contact: React.FC = () => {
   const [form, setForm] = useState({ name: '', email: '', subject: '', message: '' });
@@ -7,7 +8,10 @@ const Contact: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Simulate send
-    alert("Message sent! (Simulation)");
+    const subject = encodeURIComponent(form.subject || "Project Inquiry");
+    const body = encodeURIComponent(`Name: ${form.name}\nEmail: ${form.email}\n\nMessage:\n${form.message}`);
+    window.open(`mailto:${SOCIAL_LINKS.email}?subject=${subject}&body=${body}`);
+    setForm({ name: '', email: '', subject: '', message: '' });
   };
 
   return (
@@ -66,6 +70,7 @@ const Contact: React.FC = () => {
                                 placeholder="John Doe"
                                 value={form.name}
                                 onChange={e => setForm({...form, name: e.target.value})}
+                                required
                             />
                         </div>
                         <div>
@@ -76,6 +81,7 @@ const Contact: React.FC = () => {
                                 placeholder="john@example.com"
                                 value={form.email}
                                 onChange={e => setForm({...form, email: e.target.value})}
+                                required
                             />
                         </div>
                     </div>
@@ -83,4 +89,62 @@ const Contact: React.FC = () => {
                         <label className="block text-sm font-medium text-gray-400 mb-2">Subject</label>
                         <input 
                             type="text" 
-                            className="w-full bg-dark-90
+                            className="w-full bg-dark-900 border border-gray-700 rounded-lg px-4 py-3 text-white focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-colors"
+                            placeholder="Project Inquiry"
+                            value={form.subject}
+                            onChange={e => setForm({...form, subject: e.target.value})}
+                            required
+                        />
+                    </div>
+                    <div>
+                        <label className="block text-sm font-medium text-gray-400 mb-2">Your Message</label>
+                        <textarea 
+                            rows={4}
+                            className="w-full bg-dark-900 border border-gray-700 rounded-lg px-4 py-3 text-white focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-colors"
+                            placeholder="Tell me about your project..."
+                            value={form.message}
+                            onChange={e => setForm({...form, message: e.target.value})}
+                            required
+                        ></textarea>
+                    </div>
+
+                    <button 
+                        type="submit"
+                        className="w-full bg-gradient-to-r from-cyan-600 to-cyan-500 hover:from-cyan-500 hover:to-cyan-400 text-white font-bold py-4 rounded-lg shadow-lg shadow-cyan-500/25 flex items-center justify-center gap-2 transition-all transform hover:-translate-y-1"
+                    >
+                        <Send className="w-5 h-5" />
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+      </div>
+
+      {/* Footer */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-white/10 pt-8">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <div className="flex items-center gap-2">
+                <div className="w-8 h-8 bg-gradient-to-br from-cyan-400 to-purple-500 rounded flex items-center justify-center font-bold text-white text-xs">
+                  HK
+                </div>
+                <span className="text-gray-400 text-sm">© 2024 Hammad Khan. All rights reserved.</span>
+            </div>
+
+            <div className="flex items-center gap-6">
+                <a href={SOCIAL_LINKS.github} target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-white transition-colors">
+                    <Github className="w-5 h-5" />
+                </a>
+                <a href={SOCIAL_LINKS.linkedin} target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-white transition-colors">
+                    <Linkedin className="w-5 h-5" />
+                </a>
+                <a href={`mailto:${SOCIAL_LINKS.email}`} className="text-gray-500 hover:text-white transition-colors">
+                    <Mail className="w-5 h-5" />
+                </a>
+            </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Contact;
