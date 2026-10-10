@@ -38,7 +38,7 @@ const Hero: React.FC = () => {
       drops[i] = Math.random() * -100; // Start above screen randomly
     }
 
-    const chars = "01MUHAMMADHAMAAD01<>";
+    const chars = "01MUHAMMADHammad01<>";
 
     const handleResize = () => {
         width = canvas.width = window.innerWidth;
@@ -96,7 +96,7 @@ const Hero: React.FC = () => {
         <div className="mb-8 scale-90 md:scale-100 transition-transform">
             <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6 tracking-tighter">
               <span className="inline-block text-white drop-shadow-2xl mr-3">Muhammad</span>
-              <span className="inline-block text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-500 to-cyan-400 glow-text animate-gradient-x">Hamaad</span>
+              <span className="inline-block text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-500 to-cyan-400 glow-text animate-gradient-x">Hammad</span>
             </h1>
             
             <div className="inline-flex items-center gap-2 text-green-400 font-medium tracking-wide bg-dark-800/80 px-4 py-2 rounded-full border border-green-500/20 backdrop-blur-sm text-sm md:text-base">
@@ -114,7 +114,7 @@ const Hero: React.FC = () => {
                   <span className="text-purple-400">const</span> 
                   <span className="text-yellow-200">developer</span> 
                   <span className="text-white">=</span> 
-                  <span className="text-green-300">"Muhammad Hamaad"</span>;
+                  <span className="text-green-300">"Muhammad Hammad"</span>;
                 </p>
                 <p className="text-gray-300 leading-relaxed">
                   <span className="text-gray-500 mr-2">//</span>

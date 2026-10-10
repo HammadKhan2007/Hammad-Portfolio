@@ -73,7 +73,7 @@ const Contact: React.FC = () => {
                 </div>
 
                 <div className="p-6 bg-dark-800 rounded-xl border border-dashed border-gray-700 font-mono text-sm text-gray-400">
-                    <p className="mb-2"><span className="text-purple-400">$</span> ping Muhammad_Hamaad</p>
+                    <p className="mb-2"><span className="text-purple-400">$</span> ping Muhammad_Hammad</p>
                     <p className="text-green-400">Excuses don't impress me. Results do.</p>
                 </div>
             </div>
@@ -147,7 +147,7 @@ const Contact: React.FC = () => {
                 <div className="w-8 h-8 bg-gradient-to-br from-cyan-400 to-purple-500 rounded flex items-center justify-center font-bold text-white text-xs">
                   MH
                 </div>
-                <span className="text-gray-400 text-sm">© 2024 Muhammad Hamaad. All rights reserved.</span>
+                <span className="text-gray-400 text-sm">© 2024 Muhammad Hammad. All rights reserved.</span>
             </div>
 
             <div className="flex items-center gap-6">

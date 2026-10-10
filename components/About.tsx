@@ -68,10 +68,10 @@ const About: React.FC = () => {
               <div className="relative rounded-2xl overflow-hidden border-2 border-cyan-500/20 shadow-2xl shadow-cyan-500/10 w-full max-w-md">
                   <img 
                     src="/profile.jpg" 
-                    alt="Muhammad Hamaad" 
+                    alt="Muhammad Hammad" 
                     className="w-full h-auto object-cover"
                     onError={(e) => {
-                      e.currentTarget.src = "https://ui-avatars.com/api/?name=Muhammad+Hamaad&background=0D8ABC&color=fff&size=512";
+                      e.currentTarget.src = "https://ui-avatars.com/api/?name=Muhammad+Hammad&background=0D8ABC&color=fff&size=512";
                     }} 
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-dark-900/60 to-transparent pointer-events-none"></div>

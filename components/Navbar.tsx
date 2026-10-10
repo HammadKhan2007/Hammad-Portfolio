@@ -32,7 +32,7 @@ const Navbar: React.FC = () => {
               MH
             </div>
             <span className="font-bold text-xl tracking-tight text-white">
-              Muhammad<span className="text-cyan-400">Hamaad</span>
+              Muhammad<span className="text-cyan-400">Hammad</span>
             </span>
           </div>
           
