@@ -1,20 +1,53 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Muhammad Hammad - Data Science & AI Portfolio
 
-# Run and deploy your AI Studio app
+Welcome to the personal portfolio of **Muhammad Hammad**, specializing in **Data Science, Machine Learning, and Artificial Intelligence**.
 
-This contains everything you need to run your app locally.
+---
 
-View your app in AI Studio: https://ai.studio/apps/drive/11XyJE7uj6oTWPTyo-e9TmwzwPsL1HtyN
+## 🚀 About the Project
+A modern, responsive portfolio web application built with a cyberpunk dark aesthetic, interactive animations, and dynamic visual effects.
 
-## Run Locally
+### Tech Stack
+- **Framework:** React 18 with TypeScript
+- **Styling:** Tailwind CSS & Lucide Icons
+- **Bundler:** Vite
+- **Visuals:** Custom HTML5 Canvas Particle Network & Interactive Cursor Trails
 
-**Prerequisites:**  Node.js
+---
 
+## 🛠️ Domains & Skills
+- **Programming:** Python, R, SQL, Bash
+- **Data Analysis & Visualization:** Pandas, NumPy, Matplotlib, Tableau
+- **Machine Learning & AI:** Scikit-Learn, TensorFlow, PyTorch, Natural Language Processing (NLP)
+- **Tools & MLOps:** Jupyter Notebooks, Git & GitHub, Docker, AWS
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+---
+
+## 💻 Local Setup & Development
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/HammadKhan2007/Hammad-Portfolio.git
+   cd Hammad-Portfolio
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+
+4. **Build for production:**
+   ```bash
+   npm run build
+   ```
+
+---
+
+## 📬 Contact
+- **Email:** contact@hammadkhan.com
+- **LinkedIn & GitHub:** Available on website
